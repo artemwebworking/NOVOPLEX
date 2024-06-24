@@ -35,3 +35,63 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .opening {
+    &-main {
+      padding: gem(90) 0 0;
+      &-title {
+        width: 100%;
+        h1 {
+          text-align: center;
+        }
+        p {
+          margin: gem(10) 0 gem(40);
+          text-align: center;
+        }
+      }
+      &-pics {
+        margin: 0 auto gem(40);
+        top: unset;
+      }
+      &-button {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .opening {
+    &-main {
+      padding: gem(90) 0 gem(20);
+      &-title {
+        h1 {
+          margin-bottom: gem(10);
+        }
+        p {
+          margin: gem(10) 0 gem(20);
+        }
+      }
+      &-pics {
+        margin: 0 auto gem(30);
+        width: gem(300);
+        height: gem(300);
+        &-block {
+          width: gem(300);
+          height: gem(300);
+        }
+      }
+      &-button {
+        flex-direction: column;
+        width: gem(200);
+        margin: 0 auto;
+        &-element {
+          margin: 0 0 gem(10);
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+};

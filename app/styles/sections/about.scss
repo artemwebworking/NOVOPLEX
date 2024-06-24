@@ -20,3 +20,32 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .about {
+    &-main {
+      padding: gem(80) 0 gem(40);
+      flex-direction: column-reverse;
+      &-title {
+        width: 100%;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin: gem(20) 0 gem(30);
+        }
+      }
+      &-pics {
+        margin-bottom: gem(40);
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .about-main {
+    &-title p {
+      margin: gem(10) 0 gem(20);
+    }
+  }
+};

@@ -29,3 +29,24 @@
     }
   }
 }
+
+@media all and (max-width: 1080px) {
+  .footer {
+    &-main {
+      flex-direction: column;
+      &-title p {
+        text-align: center;
+      }
+      &-soc {
+        margin: gem(30) 0;
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+      }
+      &-copy {
+        text-align: center;
+      }
+    }
+  }
+};
