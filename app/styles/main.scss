@@ -77,8 +77,9 @@ button {
     justify-content: center;
     text-align: center;
     transition: 0.3s all ease;
+    border: 1px solid var(--color-blue);
     &:hover {
-      background-color: var(--color-white);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--color-blue);
       box-shadow: gem(0) gem(0) gem(10) gem(2) var(--color-pink);
     }
