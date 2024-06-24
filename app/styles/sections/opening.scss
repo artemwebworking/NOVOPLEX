@@ -1,0 +1,37 @@
+.opening {
+  background: var(--color-dark);
+  display: flex;
+  align-items: center;
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: gem(80) 0;
+    &-title {
+      p {
+        margin-top: gem(30);
+        text-align: right;
+      }
+    }
+    &-pics {
+      width: gem(500);
+      height: auto;
+      position: relative;
+      top: gem(80);
+      border-radius: gem(10);
+      box-shadow: gem(0) gem(0) gem(10) gem(2) var(--color-blue);
+    }
+    &-button {
+      display: flex;
+      width: 100%;
+      &-element {
+        margin-right: gem(40);
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

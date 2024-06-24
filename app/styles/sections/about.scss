@@ -1,0 +1,22 @@
+.about {
+  &-main {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: gem(80) 0;
+    &-title {
+      width: gem(580);
+      p {
+        margin: gem(20) 0 gem(30);
+      }
+    }
+    &-pics {
+      width: gem(500);
+      height: auto;
+      border-radius: gem(10);
+      box-shadow: gem(0) gem(0) gem(6) gem(2) var(--color-pink);
+    }
+  }
+}

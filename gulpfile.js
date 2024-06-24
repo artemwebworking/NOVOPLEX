@@ -60,7 +60,7 @@ function scripts() {
 }
 
 function styles() {
-	return src([`app/styles/main.sass`])
+	return src([`app/styles/main.scss`])
 		.pipe(eval(`${preprocessor}glob`)())
 		.pipe(eval(preprocessor)())
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))

@@ -1,0 +1,31 @@
+.footer {
+  background: var(--color-dark);
+  width: 100%;
+  border-top: 1px solid var(--color-pink);
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: gem(30) 0;
+    position: relative;
+    &-soc {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &-element {
+        margin-right: gem(20);
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &-tel {
+      a {
+        color: var(--color-blue);
+      }
+    }
+  }
+}

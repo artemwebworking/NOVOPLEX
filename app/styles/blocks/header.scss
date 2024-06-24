@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  padding: gem(20) gem(180);
+  background: linear-gradient(180deg, rgba(39,43,56,1) 35%, rgba(39,43,56,0.5) 100%);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--color-pink);
+  &-logo {
+    display: flex;
+    span {
+      margin-right: gem(2);
+    }
+  }
+  &-nav {
+    &-list {
+      display: flex;
+      &-element {
+        display: flex;
+        margin-right: gem(20);
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          transition: all 0.3s ease;
+          &:hover {
+            color: var(--color-blue);
+          }
+        }
+      }
+    }
+  }
+}

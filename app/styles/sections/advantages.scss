@@ -1,0 +1,43 @@
+.advantages {
+  &-main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: gem(80) 0;
+    &-title {
+      width: gem(500);
+      p {
+        margin: gem(20) 0 gem(30);
+      }
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      width: gem(580);
+      &-element {
+        display: flex;
+        align-items: center;
+        margin-bottom: gem(30);
+        border: 1px solid var(--color-pink);
+        border-radius: gem(50);
+        padding: gem(20);
+        &:last-child {
+          margin-bottom: 0;
+        }
+        svg {
+          width: gem(100);
+          fill: var(--color-blue);
+          margin-right: gem(20);
+        }
+        &-desc {
+          display: flex;
+          flex-direction: column;
+          h3 {
+            margin-bottom: gem(20);
+          }
+        }
+      }
+    }
+  }
+}
